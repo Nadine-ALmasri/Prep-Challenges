@@ -1,7 +1,5 @@
 "use strict";
 
-const { objLat } = require("./challenges-07");
-
 // Important:
 // To solve these challenges you have use (for in ,for of) or (Object.keys ,Object.values, Object.entries )
 
@@ -29,14 +27,8 @@ const { objLat } = require("./challenges-07");
 // ["Customer Name :Romio Joliat , Age :35", "Customer Name :Mario Ristrova , Age :39", ... ]
 
 const customerAndAge = (obj) => {
- const arr=Object.keys(obj)
- const ar=Object.values(obj)
-let arry=[];
-for ( let i=0 ; i <= 3; i++){
-  arry.push(`Customer Name :${arr[i]} , Age :${ar[i]}`)
-return arry ;
   // write your code here
-}};
+};
 // -------------------------------------------------------------------------------------------------------
 
 // -------------------------------------------------------------------------------------------------------
@@ -61,13 +53,7 @@ return arry ;
 // You can solve this challenge by using Object.entries
 
 const getEntries = (obj) => {
-  const arry=Object.keys(obj)
-  const arr=Object.values(obj)
-  let newArry=[]
-  for (let i=0 ; i<4; i++){
-newArry.push(`${arry[i]}: ${arr[i]}`);
-
-  }return newArry;
+  // write your code here
 };
 // -------------------------------------------------------------------------------------------------------
 
