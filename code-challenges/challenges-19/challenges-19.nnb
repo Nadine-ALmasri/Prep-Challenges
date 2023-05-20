@@ -24,7 +24,7 @@
         {
             "language": "javascript",
             "source": [
-                "\nlet a=s ,\nmoves=0,\nempty=false;\nfor (let i=0 ; i<Math.max(s.length,t.length) ; i++) \n{ if (a[i]==t[i]) continue\nelse if ( !a[i]&&!!t[i]){\n    a+=t[i];\n    moves++ ; }\n    else {\n    if(i==0)   empty=true; a=s.substr(0,1);\n   moves +=s.length - i-- \n    }\n}\nif (s.length +t.length <=k ||moves <=k&& ((k-moves)%2==0||empty==true)) \nreturn (\"Yes\");\nelse return (\"No\");"
+                "\nlet n = 0;\n   while (n < s.length && n < t.length && s[n] === t[n]) {\n             n++;\n                 }\nlet moves = (s.length - n) + (t.length - n);\n    if (k >= s.length + t.length || k >= moves && (k - moves) % 2 === 0) {      return \"Yes\";    } \n    else {     return \"No\";\n       }\n         "
             ],
             "outputs": []
         },
